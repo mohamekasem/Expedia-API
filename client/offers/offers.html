@@ -1,0 +1,19 @@
+
+<div ng-init="getOffers()">
+	<div ng-repeat="el in offer track by $index">
+<div><h1 style="color:#4682b4">{{el.hotelInfo.hotelName}}</h1>
+ <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{{el.hotelInfo.hotelImageUrl}}" >
+      <div class="caption">
+        <h3 style="color:#4682b4;">{{el.hotelInfo.hotelCity}}</h3>
+        <p>{{el.hotelInfo.description}}</p>
+        <div>For One Night: ${{el.hotelPricingInfo.originalPricePerNight}}</div>
+        <div>GuestReviewRating : {{el.hotelInfo.hotelGuestReviewRating}}</div>
+        <p><a  class="btn btn-primary" role="button" href="{{el.hotelUrls.hotelInfositeUrl}}">More Info</a></p>
+      </div>
+    </div>
+  </div>
+	</div>
+</div>
