@@ -7,18 +7,9 @@ angular.module('Expedia.offer', [])
   $scope.getOffers = function (){
     serv.GEToffers().then(function (data){
 		for(var i = 0;i<data.length;i++){
-			data[i].hotelUrls.hotelInfositeUrl = decodeURIComponent(data[i].hotelUrls.hotelInfositeUrl)
+			data[i].hotelUrls.hotelInfositeUrl = decodeURIComponent(data[i].hotelUrls.hotelInfositeUrl);
 		}
-		$scope.offer = data
-		console.log(data[0])
-
-})
+		 $scope.offer = data;
+		})
 	}
-})
-
-// });// console.log(data)// $scope.offer.push(data[i].hotelInfo)
-// $scope.moreD.push(temp)
-// $scope.moreD.Price = data[i].hotelPricingInfo	
-// 	
-// 	app.filter('decodeURIComponent', function() {
-// return window.decodeURIComponent;
+});

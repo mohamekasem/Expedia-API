@@ -20,7 +20,11 @@ Run the code : npm Start
 * Angular.Js
 * Expedia Api 
 
-## Made by Mohamed Tarbosh
-
+## Made by :
+```
+Mohamed Tarbosh
+```
 ## Links
+```
 * **heroku ** [Expedia-Api](https://expedia-api.herokuapp.com/#/)
+```
